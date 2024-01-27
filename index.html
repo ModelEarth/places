@@ -20,8 +20,8 @@ Error does not occur on localhost. TO DO: test removing with a copy of this page
 <script type="text/javascript" src="https://model.earth/localsite/js/localsite.js?showheader=true&showsearch=true"></script>
 
 <script>
-loadMarkdown("README.md", "readmeDiv", "_parent");
-loadMarkdown("indexcopy.md", "indexDiv", "_parent"); // Renamed. Seems that index.md is not loadable.
+loadMarkdown("README.md", "readmeDiv");
+loadMarkdown("copy.md", "indexDiv"); // Renamed. Seems that index.md is not loadable.
 
 waitForElm('#readmeDiv h1').then((elm) => {
   $('#readmeDiv').html($('#readmeDiv').html().replace('<h1 id="alltheplacesxyz">alltheplaces.xyz</h1>','<h1>All the Places</h1>'));
