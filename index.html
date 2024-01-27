@@ -7,10 +7,18 @@
 <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!--
+These 3 scripts prevent 404 error when loadMarkdown called before d3.v5.min.js available.
+With revisions in localsite.js we should be able to avoid including these here.
+Error does not occur on localhost. TO DO: test removing with a copy of this page.
+-->
+<script type="text/javascript" src="../../../localsite/js/jquery.min.js" id="/localsite/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../localsite/js/d3.v5.min.js" id="/localsite/js/d3.v5.min.js"></script>
+<script type="text/javascript" src="../../../localsite/js/showdown.min.js" id="/localsite/js/showdown.min.js"></script>
+
 <script type="text/javascript" src="https://model.earth/localsite/js/localsite.js?showheader=true&showsearch=true"></script>
 
 <script>
-if(typeof param=='undefined'){ var param={}; }
 loadMarkdown("README.md", "readmeDiv", "_parent");
 loadMarkdown("index.md", "indexDiv", "_parent");
 
