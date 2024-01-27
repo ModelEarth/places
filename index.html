@@ -8,7 +8,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!--
-These 3 scripts prevent 404 error when loadMarkdown called before d3.v5.min.js available.
+NOT NEEDED - REMOVE THESE
+Wrong: These 3 scripts prevent 404 error when loadMarkdown called before d3.v5.min.js available.
 With revisions in localsite.js we should be able to avoid including these here.
 Error does not occur on localhost. TO DO: test removing with a copy of this page.
 -->
@@ -20,13 +21,20 @@ Error does not occur on localhost. TO DO: test removing with a copy of this page
 
 <script>
 loadMarkdown("README.md", "readmeDiv", "_parent");
-loadMarkdown("index.md", "indexDiv", "_parent");
+loadMarkdown("indexcopy.md", "indexDiv", "_parent"); // Renamed. Seems that index.md is not loadable.
 
-waitForElm('#indexDiv iframe').then((elm) => { // Wait for an element to tell us loadMarkdown has finished
-  $('#indexDiv').html($('#indexDiv').html().replace('{% raw %}','').replace('{% endraw %}',''));
+waitForElm('#readmeDiv h1').then((elm) => {
   $('#readmeDiv').html($('#readmeDiv').html().replace('<h1 id="alltheplacesxyz">alltheplaces.xyz</h1>','<h1>All the Places</h1>'));
   $('#readmeDiv').html($('#readmeDiv').html().replace('The website for All The Places. Site is live on https://www.alltheplaces.xyz/','A growing set of web scrapers designed to output consistent geodata about as many places of business in the world as possible. The most recent updates reside at <a href="https://alltheplaces.xyz" target="atp">alltheplaces.xyz</a>.'));
   $('#readmeDiv').html($('#readmeDiv').html().replace('<p>This repository contains static resources only.</p>',''));
+});
+
+waitForElm('#indexDiv iframe').then((elm) => { // Wait for an element to tell us loadMarkdown has finished
+  $('#indexDiv').html($('#indexDiv').html().replace('{% raw %}','').replace('{% endraw %}',''));
+});
+//$(document).ready(function () {
+waitForElm('#headerbar').then((elm) => {
+  $(".showOnLoad").show();
 });
 </script>
 
@@ -45,9 +53,10 @@ img {
 
 <div class="content contentpadding" style="max-width: 800px;">
   
-
-  <div id="readmeDiv"></div>
-  <div id="indexDiv"></div>
+  <div class="showOnLoad" style="display:none;">
+    <div id="readmeDiv"></div>
+    <div id="indexDiv"></div>
+  </div>
 </div>
 
 </body>
