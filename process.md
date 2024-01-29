@@ -4,7 +4,7 @@ Each state file will probably be 5 to 20 MB (since the source file is 383.4 MB).
 
 We'll generate the SQLite and .csv files daily for both zip codes and states.
 
-We'll filter files for free client-side by [hosting on Github Pages using SQLite](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/).
+We'll filter files for free client-side by [hosting timelines on Github Pages using SQLite](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/).
 
 Here are the steps for installing the SQLite blog sample on your computer. The "blog" repo has an example of filtering timeline data in a browser.
 
