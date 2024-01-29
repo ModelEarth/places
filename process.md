@@ -94,5 +94,8 @@ Fixed nextjs link error.  Invalid <Link> with <a> child. Please remove <a> or us
 
 	npx @next/codemod new-link --force
 
+
+Here's a Python script to [import .csv files into SQLite](https://github.com/phiresky/world-development-indicators-sqlite/).
+
 We'll move the text above to a different page once we finish the steps.
 <br><br>
