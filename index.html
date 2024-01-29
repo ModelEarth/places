@@ -20,6 +20,7 @@ Error does not occur on localhost. TO DO: test removing with a copy of this page
 <script type="text/javascript" src="https://model.earth/localsite/js/localsite.js?showheader=true&showsearch=true"></script>
 
 <script>
+loadMarkdown("process.md", "processDiv");
 loadMarkdown("README.md", "readmeDiv");
 loadMarkdown("copy.md", "indexDiv"); // Renamed. Seems that index.md is not loadable.
 
@@ -54,6 +55,7 @@ img {
 <div class="content contentpadding" style="max-width: 800px;">
   
   <div class="showOnLoad" style="display:none;">
+    <div id="processDiv"></div>
     <div id="readmeDiv"></div>
     <div id="indexDiv"></div>
   </div>
