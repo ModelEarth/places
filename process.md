@@ -1,12 +1,20 @@
-# State and Zip Code File Generation
+[Community Data](/community-data/) 
 
-Each state file will probably be 5 to 20 MB (since the source file is 383.4 MB).
+# All the Places
+
+## Generation of state and zip code files containing lists of locations
+
+Each state file will be about 5 to 20 MB (since the source file is 383.4 MB).
 
 We'll generate the SQLite and .csv files daily for both zip codes and states.
 
-We'll filter files for free client-side by [hosting timelines on Github Pages using SQLite](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/).
+Files will be saved as SQLite to [host timelines on Github Pages using SQLite](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/).
 
-Here are the steps for installing the SQLite blog sample on your computer. The "blog" repo has an example of filtering timeline data in a browser.
+The "blog" repo has an example of filtering timeline data in a browser.
+
+Here are the steps for installing the SQLite blog sample on your computer.
+
+TO DO: We need help finishing the install documentation below.
 
 
 ## SQLite blog sample install
