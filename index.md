@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ![Map with points for a recent run of the scrapers](images/overview-map.png)
 
 ## Data Downloads
