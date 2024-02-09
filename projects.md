@@ -16,7 +16,7 @@ TO DO: [Pandoc GitHub Action](https://github.com/pandoc/pandoc-action-example) t
 
 <!--
 
-Had to remove top tree parameter lines from index.md to it to be displayed.
+Had to remove top tree parameter lines from index.md for it to be displayed.
 Error within inspector Console tab said:
 "Failed to load resource: the server responded with a status of 404 ()"
 
