@@ -20,6 +20,7 @@ Error does not occur on localhost. TO DO: test removing with a copy of this page
 <script type="text/javascript" src="https://model.earth/localsite/js/localsite.js?showheader=true&showsearch=true"></script>
 
 <script>
+loadMarkdown("projects.md", "projectsDiv");
 loadMarkdown("README.md", "readmeDiv");
 loadMarkdown("index.md", "indexDiv"); // Might not work with top "layout: default" 3 lines
 
@@ -54,7 +55,7 @@ img {
 <div class="content contentpadding" style="max-width: 800px;">
   
   <div class="showOnLoad" style="display:none;">
-    <div id="processDiv"></div>
+    <div id="projectsDiv"></div>
     <div id="readmeDiv"></div>
     <div id="indexDiv"></div>
   </div>
