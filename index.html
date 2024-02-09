@@ -22,7 +22,7 @@ Error does not occur on localhost. TO DO: test removing with a copy of this page
 <script>
 loadMarkdown("process.md", "processDiv");
 loadMarkdown("README.md", "readmeDiv");
-loadMarkdown("copy.md", "indexDiv"); // Renamed. Seems that index.md is not loadable.
+loadMarkdown("index.md", "indexDiv"); // Renamed. Seems that index.md is not loadable.  copy.md now has top layout: default 3 lines
 
 waitForElm('#readmeDiv h1').then((elm) => {
   $('#readmeDiv').html($('#readmeDiv').html().replace('<h1 id="alltheplacesxyz">alltheplaces.xyz</h1>','<h1>All the Places</h1>'));

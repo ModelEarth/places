@@ -2,7 +2,7 @@
 
 # All the Places
 
-The SQLite blog install portion of this page is aimed at figuring out how to use the cool timeline graph. Here's a page with our [related timeline work](/data-pipeline/timelines/prep/all/).
+The SQLite blog install portion of this page is aimed at figuring out how to use the SQLite timeline graph. Here's a page with our [related timeline work](/data-pipeline/timelines/prep/all/).
 
 
 ## Generation of state and zip code files containing lists of locations
