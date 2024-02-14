@@ -2,13 +2,14 @@
 
 ## Generating state and zip code files for All the Places
 
-We'll enerate SQLite and/or .csv
+We'll generate .csv files containing place rows for states and then zip codes.
+We'll also generate downloadable SQLite files for searches in browsers.
 
 Each state file will be about 5 to 20 MB (since the source file is 383.4 MB).
 
 We'll add a Github Action to run daily.
 
-View our page on viewing [SQLite in a Browser](/data-pipeline/tree/main/timelines/sqlite)
+View our page on viewing [SQLite in a Browser](/data-pipeline/timelines/sqlite)
 
 <!--
 
